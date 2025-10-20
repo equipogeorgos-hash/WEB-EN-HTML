@@ -1,10 +1,73 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Mi primera web</title>
-  </head>
-  <body>
-    <h1>¡Hola desde GitHub Pages!</h1>
-    <p>Esta es mi página web en HTML.</p>
-  </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Web Bonita</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #2f80ed;
+      color: white;
+      padding: 20px;
+    }
+
+    img {
+      width: 300px;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #2f80ed;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #1366d6;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bienvenido a Mi Web</h1>
+    <p>Una página sencilla con estilo</p>
+  </header>
+
+  <img src="https://picsum.photos/300" alt="Imagen aleatoria">
+
+  <button onclick="mostrarMensaje()">Haz clic aquí</button>
+
+  <footer>
+    <p>© 2025 - Creado por mí</p>
+  </footer>
+
+  <script>
+    function mostrarMensaje() {
+      alert("¡Gracias por visitar mi sitio!");
+    }
+  </script>
+
+</body>
 </html>
